@@ -1,21 +1,21 @@
 #include<stdio.h>
-int factorcount(int num)
+int factorcount(int n)
 {
-    int fc=0,i;
-    for(i=1;i<=num;i++)
+    int i,fc=0;
+    for(i=1;i<=n;i++)
     {
-        if(num%i==0)
+        if(n%i==0)
         {
             fc++;
         }
     }
     return fc;
 }
-int main()
+int  main()
 {
-    int num,fc;
-    scanf("%d",&num);
-    fc=factorcount(num);
+    int n,fc;
+    scanf("%d",&n);
+    fc=factorcount(n);
     if(fc==2)
     {
         printf("prime");
