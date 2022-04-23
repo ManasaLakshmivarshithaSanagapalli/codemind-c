@@ -1,5 +1,5 @@
 #include<stdio.h>
-int findgcd(int a,int b)
+int findgcd(int a ,int b)
 {
     int res;
     while(b)
@@ -16,5 +16,4 @@ int main()
     scanf("%d%d",&a,&b);
     gcd=findgcd(a,b);
     printf("%d",gcd);
-    return 0;
 }
