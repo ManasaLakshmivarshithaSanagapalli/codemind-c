@@ -1,22 +1,16 @@
 #include<stdio.h>
-int factorsum(int num)
-{
-    int i,fs,factorsum=0;
-    for(i=1;i<num;i++)
-    {
-        if(num%i==0)
-        {
-            fs=fs+i;
-        }
-    }
-    return fs;
-}
 int main()
 {
-    int num,fs;
-    scanf("%d",&num);
-    fs=factorsum(num);
-    if(fs>num)
+    int n,i,c=0;
+    scanf("%d",&n);
+    for(i=2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            c+=i;
+        }
+    }
+    if(c>n)
     {
         printf("True");
     }
