@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n,d,rev=0,rev2=0,h,sq1,sq2;
+    scanf("%d",&n);
+    sq1=n*n;
+    while(n!=0)
+    {
+        d=n%10;
+        n=n/10;
+        rev=rev*10+d;
+    }
+    sq2=rev*rev;
+    while(sq2!=0)
+    {
+        h=sq2%10;
+        sq2=sq2/10;
+        rev2=rev2*10+h;
+    }
+    if(sq1==rev2)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
