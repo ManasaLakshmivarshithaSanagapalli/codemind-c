@@ -16,5 +16,5 @@ int main()
             t++;
         }
     }
-    printf("%d",a*b*lcm);
+    printf("%d",lcm*a*b);
 }
