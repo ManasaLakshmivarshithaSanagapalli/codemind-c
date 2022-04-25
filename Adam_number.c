@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,rev=0,rev2=0,h,sq1,sq2;
+    int n,d,sq,sq2,h,rev=0,rev2=0;
     scanf("%d",&n);
-    sq1=n*n;
+    sq=n*n;
     while(n!=0)
     {
         d=n%10;
@@ -17,7 +17,7 @@ int main()
         sq2=sq2/10;
         rev2=rev2*10+h;
     }
-    if(sq1==rev2)
+    if(rev2==sq)
     {
         printf("True");
     }
