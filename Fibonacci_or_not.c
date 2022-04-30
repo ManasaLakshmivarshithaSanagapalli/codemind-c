@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,b,c,i;
+    int n,a,b,c;
     scanf("%d",&n);
-    a=0;b=1;
+    a=0;
+    b=1;
     if(n==0)
     {
         printf("fib series");
@@ -11,9 +12,9 @@ int main()
     c=a+b;
     while(c<n)
     {
+        c=a+b;
         a=b;
         b=c;
-        c=a+b;
     }
     if(c==n)
     {
