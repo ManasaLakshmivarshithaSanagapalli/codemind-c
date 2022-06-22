@@ -9,5 +9,5 @@ int main()
         n=n/10;
         rev=rev*10+d;
     }
-   printf("%d",rev);
+    printf("%d",rev);
 }
