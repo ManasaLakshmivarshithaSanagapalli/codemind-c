@@ -7,7 +7,7 @@ int main()
     {
         if(n%i==0)
         {
-            sum+=i;
+            sum=sum+i;
         }
     }
     if(sum==n)
