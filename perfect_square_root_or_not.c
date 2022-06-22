@@ -2,14 +2,19 @@
 #include<math.h>
 int main()
 {
-    int n,sq;
+    int n,c=0,i,p;
     scanf("%d",&n);
-    sq=sqrt(n);
-    if(n==sq*sq)
+    p=sqrt(n);
+    for(i=1;i<=p;i++)
     {
-        printf("True");
+        if(i*i==n)
+        {
+            printf("True");
+            c=c+1;
+            break;
+        }
     }
-    else
+    if(c==0)
     {
         printf("False");
     }
