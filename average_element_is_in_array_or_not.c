@@ -1,19 +1,7 @@
 #include<stdio.h>
-int linear_search(int *arr,int n,int avg)
-{
-    int i;
-    for(i=0;i<n;i++)
-    {
-        if(avg==arr[i])
-        {
-            return 1;
-        }
-    }
-    return 0;
-}
 int main()
 {
-    int n,arr[100],i,sum=0,avg;
+    int n,i,arr[100],sum=0,c=0,avg;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -21,15 +9,22 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        sum+=arr[i];
+        sum=sum+arr[i];
     }
     avg=sum/n;
-    if(linear_search(arr,n,avg))
+    for(i=0;i<n;i++)
     {
-        printf("True");
+        if(arr[i]==avg)
+        {
+            c=c+1;
+        }
     }
-    else
+    if(c==0)
     {
         printf("False");
     }
-   }
+    else
+    {
+        printf("True");
+    }
+}
