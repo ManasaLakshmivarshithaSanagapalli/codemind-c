@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,arr[100],d,rev=0,t,c=0;
+    int n,i,arr[100],t,d,rev=0,c=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -9,9 +9,9 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        rev=0;
         t=arr[i];
-        while(arr[i])
+        rev=0;
+        while(arr[i]!=0)
         {
             d=arr[i]%10;
             arr[i]=arr[i]/10;
@@ -19,7 +19,7 @@ int main()
         }
         if(rev==t)
         {
-            c++;
+            c=c+1;
         }
     }
     printf("%d",c);
